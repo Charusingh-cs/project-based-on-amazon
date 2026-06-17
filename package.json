@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "amazonweb",
+=======
+  "name": "amazon",
+>>>>>>> c172c0df2cc8e32c0b27f615bd79dbc9852336b9
   "private": true,
   "version": "0.0.0",
   "type": "module",
