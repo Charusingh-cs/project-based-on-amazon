@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #eaeded;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 60px;
+  background: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  height: 40px;
+}
+
+.search-bar select {
+  width: 60px;
+  border: none;
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  width: 50px;
+  border: none;
+  background: #febd69;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-bar button:hover {
+  background: #f3a847;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+.nav-links span {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= SECOND NAVBAR ================= */
+
+.sub-nav {
+  height: 40px;
+  background: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.sub-nav p {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sub-nav p:hover,
+.nav-links span:hover {
+  color: #febd69;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1512909006721-3d6018887383?w=1600");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: black;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 2rem;
+}
+
+/* ================= COOKIE BAR ================= */
+
+.cookie-bar {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  margin: -30px 20px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ================= PRODUCT CARDS ================= */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.card,
+.signin-card {
+  background: white;
+  padding: 20px;
+  min-height: 420px;
+}
+
+.card h2,
+.signin-card h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.signin-card button {
+  width: 100%;
+  padding: 10px;
+  background: #ffd814;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.signin-card button:hover {
+  background: #f7ca00;
+}
+
+.signin-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #131921;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .sub-nav {
+    overflow-x: auto;
+    gap: 15px;
+  }
+}
